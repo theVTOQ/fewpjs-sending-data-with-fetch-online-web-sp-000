@@ -37,6 +37,6 @@ function addIdToDom(object){
 
 function renderError(error){
   const errorP = document.createElement("p");
-  errorP.innerText = error.message;
+  errorP.innerHtml = error.message;
   documentBody.appendChild(errorP);
 }
