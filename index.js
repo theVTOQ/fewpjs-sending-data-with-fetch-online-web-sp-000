@@ -31,12 +31,12 @@ function addIdToDom(object){
   }
 
   const newId = document.createElement("li");
-  newId.innerText = object.id;
+  newId.innerHTML = object.id;
   idList.appendChild(newId);
 }
 
 function renderError(error){
   const errorP = document.createElement("p");
-  errorP.innerText = error.message;
+  errorP.innerHTML = error.message;
   documentBody.appendChild(errorP);
 }
