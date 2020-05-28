@@ -31,7 +31,7 @@ function addIdToDom(object){
   }
 
   const newId = document.createElement("li");
-  newId.innerText = object.id;
+  newId.innerHtml = object.id;
   idList.appendChild(newId);
 }
 
