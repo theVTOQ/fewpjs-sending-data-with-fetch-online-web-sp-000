@@ -17,10 +17,6 @@ function submitData(name, email){
   };
 
   return fetch("http://localhost:3000/users", configurationObject)
-  // .then(function(response){
-  //   return response.json();
-  // })
-  // .then(function(object){
   .then(response => response.json())
   .then(object => addIdToDom(object))
   .catch(error => renderError(error));
